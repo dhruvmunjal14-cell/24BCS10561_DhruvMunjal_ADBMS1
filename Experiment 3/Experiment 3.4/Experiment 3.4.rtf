@@ -1,16 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red255\green255\blue255;\red0\green0\blue0;
-\red19\green118\blue70;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c100000;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
-\cssrgb\c3529\c52549\c34510;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 select\cf0 \strokec4  E1.NAME , B1.BONUS \cf2 \strokec2 FROM\cf0 \strokec4  EMPLOYEE \cf2 \strokec2 as\cf0 \strokec4  E1\cb1 \
-\cf2 \cb3 \strokec2 LEFT\cf0 \strokec4  \cf2 \strokec2 JOIN\cf0 \strokec4  BONUS \cf2 \strokec2 AS\cf0 \strokec4  B1\cb1 \
-\cf2 \cb3 \strokec2 ON\cf0 \strokec4  E1.EMPID \cf2 \strokec2 =\cf0 \strokec4  B1.EMPID\cb1 \
-\cf2 \cb3 \strokec2 WHERE\cf0 \strokec4  B1.BONUS \cf2 \strokec2 <\cf0 \strokec4  \cf5 \strokec5 1000\cf0 \strokec4  \cf2 \strokec2 OR\cf0 \strokec4  B1.BONUS \cf2 \strokec2 IS\cf0 \strokec4  \cf2 \strokec2 NULL\cf0 \cb1 \strokec4 \
-}
+select E1.NAME , B1.BONUS FROM EMPLOYEE as E1
+LEFT JOIN BONUS AS B1
+ON E1.EMPID = B1.EMPID
+WHERE B1.BONUS < 1000 OR B1.BONUS IS NULL
