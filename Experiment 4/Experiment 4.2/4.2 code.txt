@@ -1,0 +1,10 @@
+
+ Select * 
+ From student as s1
+ inner join course as c1
+ on s1.Course_id = c1.Course_id;
+ 
+ Select *
+ from student as s1
+ left join course as c1
+ on s1.course_id = c1.course_id;
