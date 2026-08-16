@@ -1,0 +1,11 @@
+-- Query 1: INNER JOIN
+SELECT *
+FROM student s
+JOIN course c
+    ON s.Course_id = c.Course_id;
+
+-- Query 2: RIGHT JOIN
+SELECT *
+FROM student s
+RIGHT JOIN course c
+    ON s.Course_id = c.Course_id;

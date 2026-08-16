@@ -1,0 +1,11 @@
+SELECT 
+    c.Customer_id,
+    c.Customer_Name,
+    c.Customer_Age,
+    p.Purchase_id,
+    p.Customer_id,
+    p.Purchase_amt,
+    p.Last_purchase_month
+FROM Customer c
+INNER JOIN Purchase p
+    ON c.Customer_id = p.Customer_id;
